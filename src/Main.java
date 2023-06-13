@@ -8,13 +8,10 @@ public class Main {
 
         FlyingCar flyHigh = new FlyingCar(50, 300, "Fly High");
         flyHigh.startEngine();
-        flyHigh.accelerate(50);
+        flyHigh.accelerate(30);
         flyHigh.changeGear();
         flyHigh.takeOff();
     }
 }
 
-//
-//        Instantieer objecten voor deze subclasses vanuit main() en laat ze rijden en vliegen.
-//
 //        Bonus: Voeg een Airport class toe met een lijst van voertuigen die kunnen vliegen. Genereer random de vulling voor de lijst.

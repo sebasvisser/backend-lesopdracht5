@@ -22,6 +22,7 @@ public class FlyingCar extends Vehicle implements Flyable, Driveable{
 
     @Override
     public void takeOff() {
+        System.out.println(name+" is taking off from the ground and is now flying instead of driving.");
 
     }
 

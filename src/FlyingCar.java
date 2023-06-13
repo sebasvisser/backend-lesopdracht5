@@ -16,23 +16,26 @@ public class FlyingCar extends Vehicle implements Flyable, Driveable{
 
     @Override
     public void changeGear() {
-// todo: if-else statement toevoegen om specifiek naar een bepaalde gear te schakelen
-        System.out.println(name + "Changing Gears");
+        System.out.println(name + " is changing gears");
+        if (speed < 50){
+            System.out.println(name + " is changing to second gear.");
+        } else if (speed < 100){
+            System.out.println(name + " is changing to third gear.");
+        } else {
+            System.out.println(name + " is changing to fourth gear.");
+        }
     }
 
     @Override
     public void takeOff() {
         System.out.println(name+" is taking off from the ground and is now flying instead of driving.");
-
     }
 
     @Override
     public void land() {
-
     }
 
     @Override
     public void changeHeight() {
-
     }
 }
